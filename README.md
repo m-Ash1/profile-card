@@ -44,7 +44,7 @@ This challenge sharpen my skills in flexbox and positioning of the element on it
 
 ### Continued development
 
-I will try using the grid system to build the layout of the page. I will search more on grid and practice more on using flexbox.
+i will practice more on handling svg images in the layout because this make a lot of problems when positioning in in the page while the body was flexbox
 
 ## Author
 
