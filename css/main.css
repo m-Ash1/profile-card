@@ -1,0 +1,113 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+.svg-top {
+  position: absolute;
+  top: -413px;
+  left: -300px;
+  z-index: -1;
+}
+.svg-bottom {
+  position: absolute;
+  top: 501px;
+  right: -200px;
+  z-index: -1;
+}
+
+.main {
+  background-color: white;
+  width: 350px;
+  height: 375px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.upper-card {
+  height: 200px;
+  position: relative;
+}
+.upper-card::before {
+  content: url(../images/image-victor.jpg);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  border: 5px #fff solid;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.middle-card {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.name {
+  display: flex;
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.name .number {
+  margin-left: 5px;
+  font-weight: 100;
+  color: hsl(227, 10%, 46%);
+}
+.country {
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
+}
+
+.lower-card {
+  height: 95px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  border-top: 1px hsl(227deg 10% 46% / 21%) solid;
+  padding: 0 25px 0 25px;
+}
+.stats {
+  text-align: center;
+  font-weight: bold;
+  font-size: 115%;
+  color: hsl(229, 23%, 23%);
+}
+.stats span {
+  font-weight: bold;
+  font-size: 70%;
+  color: hsl(227deg 10% 46% / 21%);
+}
+
+@media (max-width: 575px) {
+  .svg-top {
+    position: absolute;
+    top: -613px;
+    left: -670px;
+    z-index: -1;
+  }
+  .svg-bottom {
+    position: absolute;
+    top: 521px;
+    right: -620px;
+    z-index: -1;
+  }
+}
